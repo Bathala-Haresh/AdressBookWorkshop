@@ -29,13 +29,6 @@ body {
     border: solid 0px #42515f;
 }
 
-.heading{
-    align-items: center;
-    color: blue;
-    width: 90%;
-    text-align: center;
-}
-
 .per-text {
     font: normal normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
@@ -183,4 +176,58 @@ error-output {
     text-align: right;
 }
 
+@media only screen and (max-width:600px) {
+    .form {
+        margin-top: 10px;
+    }
+    .add-reset {
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .addButton {
+        margin: 0;
+    }
+    .button-parent {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}
 
+@media only screen and (max-width:960px) {
+    .cancelButton {
+        margin-left: 0px;
+    }
+    .form {
+        width: 85%;
+        padding: 44px 20px;
+    }
+}
+
+a.button:hover {
+    background: grey;
+    color: white;
+}
+
+.addButton:hover {
+    background-color: #82a70c;
+    color: white;
+}
+
+.resetButton:hover {
+    background: grey;
+    color: white;
+}
+
+.department {
+    margin-left: 30px;
+}
+
+@media only screen and (max-width:320px) {
+    .label {
+        min-width: 50px;
+    }
+}
